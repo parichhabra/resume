@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pari | Digital Business Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f5f2;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #1a1a1a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+      color: #e0e0e0;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      padding: 5px 0;
+      border-bottom: 2px solid transparent;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .navbar a:hover {
+      color: #d4af37;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 50px;
+      border-radius: 5px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a1a1a;
+      margin: 20px 0 15px;
+      font-size: 2.4rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: #666;
+    }
+
+    .contact div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact a {
+      color: #5a7d7c;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      color: #3a5a58;
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: #1a1a1a;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 10px;
+      margin-top: 45px;
+      font-size: 1.6rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
+    h3 {
+      color: #333;
+      margin: 20px 0 8px;
+      font-size: 1.3rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+    }
+
+    .section {
+      margin-top: 30px;
+      scroll-margin-top: 80px;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #5a7d7c;
+    }
+
+    ul {
+      padding-left: 25px;
+      margin: 15px 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    li:before {
+      content: "•";
+      color: #d4af37;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .interests-container {
+      margin-top: 20px;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .interests span {
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+      color: #444;
+      border: 1px solid #e0e0e0;
+    }
+
+    .interests span:hover {
+      background-color: #e0e0e0;
+      transform: translateY(-2px);
+      color: #1a1a1a;
+    }
+
+    .icon {
+      font-size: 1rem;
+      color: #d4af37;
+    }
+
+    em {
+      color: #666;
+      font-style: normal;
+      font-size: 0.95rem;
+    }
+
+    p {
+      margin: 12px 0;
+      color: #555;
+    }
+
+    strong {
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px;
+        margin: 20px;
+      }
+      
+      .navbar {
+        flex-wrap: wrap;
+        padding: 12px;
+      }
+      
+      .navbar a {
+        margin: 5px 10px;
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .contact {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#education">Education</a>
+    <a href="#roles">Roles</a>
+    <a href="#languages">Languages</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#interests">Interests</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Pari</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 20px; font-style: italic;">Digital Business & Entrepreneurship Student</p>
+
+    <div class="contact">
+      <div><span class="icon">📍</span> Jagadhri-Yamunanagar, Haryana</div>
+      <div><span class="icon">📞</span>  <a href="tel:+918222000042" class="phone-link">+91 8222000042</div>
+      <div><span class="icon">✉️</span> <a href="mailto:parichhabra391@gmail.com>class="email-link">parichhabra391@gmail.com</a></div>
+      <div><span class="icon">🔗</span> <a href="www.linkedin.com/in/pari-chhabra-8a67a8325 target="_blank">LinkedIn Profile</a></div>
+    </div>
+
+    <div id="education" class="section">
+      <h2>EDUCATION</h2>
+      <h3>Bachelor of Business Administration – Digital Business & Entrepreneurship</h3>
+      <p><em>Indian Institute of Management Bangalore (IIM Bangalore)</em></p>
+      <p><strong>Expected Graduation:</strong> 2027</p>
+      <p>
+        Currently pursuing a cutting-edge undergraduate program at one of India's premier business schools,
+        with a focused curriculum in digital innovation, business strategy, and entrepreneurial leadership.
+        Gaining hands-on experience in real-world business scenarios, digital transformation, and startup incubation,
+        while developing a strong foundation in management, finance, marketing, and technology-driven business models.
+      </p>
+      
+      <h3>Secondary Education</h3>
+      <p><span class="highlight">GRADE X</span> – St Vivekanand International School,Jagadhri-Yamunanagar</p>
+      <p>Secured 78% in Total (2019–2020)</p>
+      
+      <h3> Senior Secondary Education</h3>
+      <p><span class="highlight">GRADE XII</span> – SD.Public School,Jagadhri-Yamunanagar</p>
+      <p>Secured 86.4% in Total (2022–2023)</p>
+    </div>
+
+    <div id="roles" class="section">
+      <h2>ROLES & RESPONSIBILITIES</h2>
+      <ul>
+        <li>House Captain in Grade XI</li>
+    
+        <li>created and leaded a social awareness club about youth empowerment</li>
+        
+        <li>Class Representative (Grade IX to XII)</li>
+      </ul>
+    </div>
+
+    <div id="languages" class="section">
+      <h2>LANGUAGES</h2>
+      <ul>
+        <li><strong>Hindi and Punjabi</strong> - Native proficiency</li>
+        <li><strong>English</strong> - Professional working proficiency</li>
+      </ul>
+    </div>
+
+    <div id="achievements" class="section">
+      <h2>ACHIEVEMENTS AND CERTIFICATIONS</h2>
+      <ul>
+        <li>Won the debate competition</li>
+        <li>Made a stock market portfolio at age of 16 from own pocket money and earned profit of 5000</li>
+        <li>Won the Interschool tug of war tournament</li>
+        
+        
+        
+      </ul>
+    </div>
+
+    <div id="interests" class="section">
+      <h2>INTERESTS</h2>
+      <div class="interests-container">
+        <div class="interests">
+          <span>Cricket</span>
+          <span>Badminton</span>
+          <span>swimming</span>
+          <span>Animated content</span>
+          <span>Finance and investment</span>
+          <span>Entrepreneurship</span>
+          <span>Business Strategy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
